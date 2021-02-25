@@ -21,11 +21,10 @@ def open_file():
 
 
 def convert():
-    """Convert using a semplified version of the Histogram Equalization"""
+    """Convert using a simplified version of the Histogram Equalization"""
     filepath = entry.get()
     to_equalize = Image.open(filepath)
     to_equalize = to_equalize.convert('L')
-    # to_equalize.show()
     data = asarray(to_equalize)
     equalizedArray = np.empty_like(data)
 
@@ -58,7 +57,6 @@ def convert():
 
     equalized = Image.fromarray(equalizedArray)
     equalized.save("Equalized.png", "PNG")
-    # equalized.show()
 
 
 """GUI handling with Tkinter"""
