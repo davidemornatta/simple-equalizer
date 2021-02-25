@@ -1,4 +1,4 @@
-# PyImageEqualizer
+# simple-equalizer
 
 ## Usage
 Clone this repository locally using:
